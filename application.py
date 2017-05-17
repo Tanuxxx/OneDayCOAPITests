@@ -1,6 +1,7 @@
 import pymssql
 import logging
 import os
+import session
 
 QA_SERVER_URL = "http://cms-st.oneday.com"
 PROD_SERVER_URL = "http://cms.oneday.com"
@@ -8,6 +9,7 @@ PROD_SERVER_URL = "http://cms.oneday.com"
 
 class Application:
     def __init__(self):
+        self.curr_session = session.Session()
         logging.basicConfig(filename = "{0}/{1}.log".format(os.getcwd(), "Logfile"), level=logging.INFO,
                             format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         self.logger = logging.getLogger("Logger")
@@ -41,7 +43,7 @@ class Application:
         return PROD_SERVER_URL
 
     def get_users(self):
-        self.logger.info("User get from file:")
+        self.logger.info("Get users from file:")
         with open("{0}\{1}".format(os.getcwd(), "expdata.csv")) as user_file:
             users = user_file.read().split()
             user_list = []
@@ -52,21 +54,33 @@ class Application:
 
         return user_list
 
-    def compare_responses(self, qa_server_response, prod_server_response):
+    def compare_responses(self, qa_server_response, prod_server_response, key_value):
         if len(qa_server_response) != len(prod_server_response):
-            self.logger.info("qa server response length is {0} and doesn't equal production serve response length {1}".format(
+            self.logger.info("Qa server response length is = {0} and doesn't equal production server response length = {1}".format(
                              len(qa_server_response), len(prod_server_response)))
-            self.logger.info(qa_server_response)
-            self.logger.info(prod_server_response)
+            self.logger.info("QA server response: {0}".format(qa_server_response))
+            self.logger.info("Prod server response: {0}".format(prod_server_response))
             return False
 
         for numb in range(len(qa_server_response)):
             for key in qa_server_response[numb].keys():
-                if qa_server_response[numb][key] != prod_server_response[numb][key]:
-                    self.logger.info("responses by key {0} are not equal, qa server response {1}, prod server response {2}".format(
-                                 key, qa_server_response[numb][key], prod_server_response[numb][key]))
+                if type(qa_server_response[numb][key]) is list:
+                    if len(qa_server_response[numb][key]) != len(prod_server_response[numb][key]):
+                        self.logger.info(
+                            "Responses with {0} = {1} by field {2} are not equal: qa server response length = {3}, prod server response length = {4}".format(
+                                key_value, qa_server_response[numb][key_value], key, len(qa_server_response[numb][key]),
+                                len(prod_server_response[numb][key])))
+                        return False
+                    qa_serv_response_curr = sorted(qa_server_response[numb][key])
+                    prod_serv_response_curr = sorted(prod_server_response[numb][key])
+                else:
+                    qa_serv_response_curr = qa_server_response[numb][key]
+                    prod_serv_response_curr = prod_server_response[numb][key]
+                if qa_serv_response_curr != prod_serv_response_curr:
+                    self.logger.info("Responses with {0} = {1} by field {2} are not equal: qa server response is {3}, prod server response is {4}".format(
+                        key_value, qa_server_response[numb][key_value], key, qa_serv_response_curr, prod_serv_response_curr))
                     return False
-
+            self.logger.info("Responses with {0} = {1} are equal".format(key_value, qa_server_response[numb][key_value]))
         return True
 
 
