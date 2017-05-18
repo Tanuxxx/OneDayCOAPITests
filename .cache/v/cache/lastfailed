@@ -1,3 +1,3 @@
 {
-  "test_categories.py::test_compare_categories_qa_prod": true
+  "test_categories.py::test_compare_board_qa_with_app_data_prod": true
 }
