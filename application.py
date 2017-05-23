@@ -14,13 +14,13 @@ class Application:
                             format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         self.logger = logging.getLogger("Logger")
 
-        # # Create DB connection
-        # #QA
-        # self.qa_db_connection = pymssql.connect(server="qa.cpiqjs9uzigz.us-west-2.rds.amazonaws.com",
-        #                                         user="sa", password="ODProd!2", database="oneday")
-        # self.qa_db_cursor = self.qa_db_connection.cursor()
-        # self.logger.info("Connected to QA DB")
-        #
+        # Create DB connection
+        #QA
+        self.qa_db_connection = pymssql.connect(server="qa.cpiqjs9uzigz.us-west-2.rds.amazonaws.com",
+                                                user="sa", password="ODProd!2", database="oneday")
+        self.qa_db_cursor = self.qa_db_connection.cursor()
+        self.logger.info("Connected to QA DB")
+
         # #Prod
         # self.prod_db_connection = pymssql.connect(server="onedayprod.cpiqjs9uzigz.us-west-2.rds.amazonaws.com",
         #                                         user="OneDayuser", password="ODProd!2", database="oneday")
@@ -33,8 +33,8 @@ class Application:
         self.qa_db_cursor.close()
         self.qa_db_connection.close()
 
-        self.prod_db_cursor.close()
-        self.prod_db_connection.close()
+        # self.prod_db_cursor.close()
+        # self.prod_db_connection.close()
 
     def get_qa_server_url(self):
         return QA_SERVER_URL
@@ -44,13 +44,24 @@ class Application:
 
     def get_users(self):
         self.logger.info("Get users from file:")
-        with open("{0}\{1}".format(os.getcwd(), "expdata.csv")) as user_file:
-            users = user_file.read().split()
+
+        with open("{0}\{1}".format(os.getcwd(), "CommunityAdminLogins.sql")) as script_file:
+            script = script_file.read()
+            self.qa_db_cursor.execute(script)
             user_list = []
-            for user in users:
-                self.logger.info("{0}".format(user))
-                user_list.append(user.split(';'))
-            user_list[0][0] = user_list[0][0][-2:]
+            user = self.qa_db_cursor.fetchone()
+            while user:
+                user = self.qa_db_cursor.fetchone()
+                user_list.append(user)
+
+
+        # with open("{0}\{1}".format(os.getcwd(), "expdata.csv")) as user_file:
+        #     users = user_file.read().split()
+        #     user_list = []
+        #     for user in users:
+        #         self.logger.info("{0}".format(user))
+        #         user_list.append(user.split(';'))
+        #     user_list[0][0] = user_list[0][0][-2:]
 
         return user_list
 

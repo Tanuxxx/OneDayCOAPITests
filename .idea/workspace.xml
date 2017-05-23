@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c45c0064-147c-40ca-8d1e-421f6416e3ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/.cache/v/cache/lastfailed" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/CommunityAdminLogins.sql" afterPath="$PROJECT_DIR$/CommunityAdminLogins.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/Logfile.log" afterPath="$PROJECT_DIR$/Logfile.log" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/expdata.csv" afterPath="$PROJECT_DIR$/expdata.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/test_categories.py" afterPath="$PROJECT_DIR$/test_categories.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/.cache/v/cache/lastfailed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OneDayCOAPITests.iml" afterPath="$PROJECT_DIR$/.idea/OneDayCOAPITests.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logfile.log" afterPath="$PROJECT_DIR$/Logfile.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/application.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_categories.py" afterPath="$PROJECT_DIR$/test_categories.py" />
     </list>
     <ignored path="OneDayCOAPITests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+            <state relative-caret-position="266">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="63" selection-end-column="52" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -44,12 +42,21 @@
       <file leaf-file-name="test_categories.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_categories.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+            <state relative-caret-position="18">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logfile.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logfile.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9195">
+              <caret line="26129" column="40" selection-start-line="26129" selection-start-column="40" selection-end-line="26129" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,7 +74,7 @@
       <file leaf-file-name="CommunityAdminLogins.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CommunityAdminLogins.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="250">
               <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding />
             </state>
@@ -77,7 +84,7 @@
       <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="400">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
@@ -107,16 +114,17 @@
         <option value="$PROJECT_DIR$/Tests/Logfile.log" />
         <option value="$PROJECT_DIR$/session.py" />
         <option value="$PROJECT_DIR$/Tests/test_categories.py" />
-        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/Logfile.log" />
         <option value="$PROJECT_DIR$/test_categories.py" />
+        <option value="$PROJECT_DIR$/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2409" />
-    <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1318" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -144,21 +152,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="OneDayCOAPITests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.5.2 (C:\Users\tsaytieva\AppData\Local\Programs\Python\Python35\python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -173,10 +172,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -188,30 +190,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.py.test in test_compare_board_qa_with_app_data_prod (1)">
-    <configuration default="false" name="py.test in test_compare_categories_qa_prod" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OneDayCOAPITests" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/Tests/test_categories.py" />
-      <option name="keywords" value="test_compare_categories_qa_prod" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="true" />
-      <method />
-    </configuration>
     <configuration default="false" name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,6 +277,23 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_categories" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OneDayCOAPITests" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_categories.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -436,24 +431,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_categories_qa_prod" />
-      <item index="1" class="java.lang.String" itemvalue="Python.application" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_categories.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python.application" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_categories.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_categories" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_categories.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod" />
-        <item index="3" class="java.lang.String" itemvalue="Python.application" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_categories_qa_prod" />
+        <item index="1" class="java.lang.String" itemvalue="Python.application" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_categories.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_categories" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_compare_board_qa_with_app_data_prod" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -466,39 +464,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 37m 15s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 13m 32s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 37m 28s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 14m 39s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 37m 53s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 15m 13s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 38m 05s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 16m 21s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 38m 50s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 19m 12s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 39m 48s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 19m 47s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 17h 40m 58s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 20m 50s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 18h 34m 12s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.23 at 22h 22m 16s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 18h 37m 05s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.25 at 21h 42m 16s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.18 at 19h 20m 16s.xml">
+    <history-entry file="py_test_in_test_compare_board_qa_with_app_data_prod_(1) - 2017.05.25 at 21h 51m 00s.xml">
       <configuration name="py.test in test_compare_board_qa_with_app_data_prod (1)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2409" y="-9" width="2418" height="1318" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -506,7 +504,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32853514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32762557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -540,6 +538,102 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_categories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logfile.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638650">
+          <caret line="25546" column="40" selection-start-line="25546" selection-start-column="40" selection-end-line="25546" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expdata.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommunityAdminLogins.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_categories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expdata.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommunityAdminLogins.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1804">
           <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding>
@@ -554,7 +648,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
           </folding>
         </state>
       </provider>
@@ -591,7 +684,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
           </folding>
         </state>
       </provider>
@@ -621,7 +713,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
           </folding>
         </state>
       </provider>
@@ -666,7 +757,6 @@
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
           </folding>
         </state>
       </provider>
@@ -680,26 +770,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/conftest56.py" />
-    <entry file="file://$PROJECT_DIR$/../OneDayApiTest/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../OneDayApiTest/test.py" />
     <entry file="file://$PROJECT_DIR$/Tests/Log.txt.log" />
-    <entry file="file://$PROJECT_DIR$/Logfile.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40950">
-          <caret line="1970" column="0" selection-start-line="1970" selection-start-column="0" selection-end-line="1970" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/conftest56.py" />
     <entry file="file://$PROJECT_DIR$/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="400">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommunityAdminLogins.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -712,18 +797,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CommunityAdminLogins.sql">
+    <entry file="file://$PROJECT_DIR$/Logfile.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="9195">
+          <caret line="26129" column="40" selection-start-line="26129" selection-start-column="40" selection-end-line="26129" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+        <state relative-caret-position="266">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="63" selection-end-column="52" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -732,11 +817,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_categories.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        <state relative-caret-position="18">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1495124408120" expanded="true" signature="1327:1649" ph="..." />
           </folding>
         </state>
       </provider>

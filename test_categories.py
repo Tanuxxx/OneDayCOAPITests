@@ -45,22 +45,22 @@ def test_compare_board_qa_with_app_data_prod(app):
         # app.logger.info("Authenticated to Prod as {0}".format(login_string))
 
 
-        # #Categories
-        # api_request_v2 = "{0}{1}/{2}".format(GET_CATEGORIES_V2, companyID, communityID)
-        # api_request_v1 = "{0}{1}".format(GET_CATEGORIES_V1, companyID)
-        # app.logger.info("Comparing Categories got by request: {0} for v.2 and request: {1} for v.1".format(
-        #                                                                                 api_request_v2, api_request_v1))
-        # qa_categories_response = requests.get("{0}{1}".format(app.get_qa_server_url(), api_request_v2),
-        #                 headers = qa_login_header).json()
-        # prod_categories_response = requests.post("{0}{1}".format(app.get_prod_server_url(), api_request_v1),
-        #                 headers = qa_login_header).json()
-        #
-        # sorting_key = "CmsCategoryId"
-        # assert(app.compare_responses(sorted(qa_categories_response, key=lambda k: k[sorting_key]),
-        #                          sorted(prod_categories_response, key=lambda k: k[sorting_key]), sorting_key))
-        #
-        # app.logger.info("Categories are equal")
-        #
+        #Categories
+        api_request_v2 = "{0}{1}/{2}".format(GET_CATEGORIES_V2, companyID, communityID)
+        api_request_v1 = "{0}{1}".format(GET_CATEGORIES_V1, companyID)
+        app.logger.info("Comparing Categories got by request: {0} for v.2 and request: {1} for v.1".format(
+                                                                                        api_request_v2, api_request_v1))
+        qa_categories_response = requests.get("{0}{1}".format(app.get_qa_server_url(), api_request_v2),
+                        headers = qa_login_header).json()
+        prod_categories_response = requests.post("{0}{1}".format(app.get_prod_server_url(), api_request_v1),
+                        headers = qa_login_header).json()
+
+        sorting_key = "CmsCategoryId"
+        assert(app.compare_responses(sorted(qa_categories_response, key=lambda k: k[sorting_key]),
+                                 sorted(prod_categories_response, key=lambda k: k[sorting_key]), sorting_key))
+
+        app.logger.info("Categories are equal")
+
         #
         # #Stories
         # api_request_v2 = "{0}{1}/{2}".format(GET_STORIES_V2, companyID, communityID)
@@ -79,21 +79,21 @@ def test_compare_board_qa_with_app_data_prod(app):
         # app.logger.info("Stories are equal")
 
 
-        #Moments
-        api_request_v2 = "{0}{1}/{2}".format(GET_MOMENTS_V2, companyID, communityID)
-        api_request_v1 = "{0}{1}".format(GET_MOMENTS_V1, companyID)
-        app.logger.info("Comparing Moments got by request: {0} for v.2 and request: {1} for v.1".format(
-                                                                                        api_request_v2, api_request_v1))
-        qa_categories_response = requests.get("{0}{1}".format(app.get_qa_server_url(), api_request_v2),
-                        headers = qa_login_header).json()
-        prod_categories_response = requests.post("{0}{1}".format(app.get_prod_server_url(), api_request_v1),
-                        headers = qa_login_header).json()
-
-        sorting_key = "CmsMomentId"
-        assert(app.compare_responses(sorted(qa_categories_response, key=lambda k: k[sorting_key]),
-                                sorted(prod_categories_response, key=lambda k: k[sorting_key]), sorting_key))
-
-        app.logger.info("Moments are equal")
+        # #Moments
+        # api_request_v2 = "{0}{1}/{2}".format(GET_MOMENTS_V2, companyID, communityID)
+        # api_request_v1 = "{0}{1}".format(GET_MOMENTS_V1, companyID)
+        # app.logger.info("Comparing Moments got by request: {0} for v.2 and request: {1} for v.1".format(
+        #                                                                                 api_request_v2, api_request_v1))
+        # qa_categories_response = requests.get("{0}{1}".format(app.get_qa_server_url(), api_request_v2),
+        #                 headers = qa_login_header).json()
+        # prod_categories_response = requests.post("{0}{1}".format(app.get_prod_server_url(), api_request_v1),
+        #                 headers = qa_login_header).json()
+        #
+        # sorting_key = "CmsMomentId"
+        # assert(app.compare_responses(sorted(qa_categories_response, key=lambda k: k[sorting_key]),
+        #                         sorted(prod_categories_response, key=lambda k: k[sorting_key]), sorting_key))
+        #
+        # app.logger.info("Moments are equal")
 
 
         # #Theme
